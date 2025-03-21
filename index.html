@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>胡燕 | 个人网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2a5caa;
+            --secondary-color: #f39c12;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            background: white;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            padding: 0 5%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#education">教育经历</a></li>
+            <li><a href="#honors">曾获荣誉</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>胡燕</h1>
+            <p>学号：2024303110101</p>
+            <p>追求卓越，永不止步</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="card">
+            <h2>个人简介</h2>
+            <p>我是胡燕，目前就读于XX大学XX专业。热爱编程与技术创新，具有扎实的专业基础和丰富的实践经验。擅长Web开发与数据分析，始终保持着对新技术的好奇心和学习热情。</p>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="card">
+            <h2>教育经历</h2>
+            <ul>
+                <li>XX大学 | XX专业 | 2022-至今</li>
+                <li>XX高中 | 理科重点班 | 2019-2022</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="honors" class="section">
+        <div class="card">
+            <h2>曾获荣誉</h2>
+            <ul>
+                <li>2023年全国大学生程序设计竞赛三等奖</li>
+                <li>2022年度校级优秀学生干部</li>
+                <li>2021年全国高中数学联赛省级二等奖</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="card">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p>huyan@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <p>+86 138-0000-0000</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-weixin fa-2x"></i>
+                    <p>WeChat: huyan2024</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github fa-2x"></i>
+                    <p>github.com/huyan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 胡燕 | 学号：2024303110101</p>
+        <p>网站设计：现代化风格 | 持续更新中</p>
+    </footer>
+</body>
+</html>
